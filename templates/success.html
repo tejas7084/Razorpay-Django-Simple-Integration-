@@ -1,0 +1,8 @@
+{% extends 'base.html' %} {% block content %} {% if status %}
+<h2 style="text-align: center; color: greenyellow">Success!</h2>
+
+<a href="{% url 'paymment_page' %}" style="text-align: center">Go to Home</a>
+{% else %}
+<h2 style="text-align: center; color: red">Failure!</h2>
+
+{% endif %} {% endblock content %}
